@@ -171,17 +171,17 @@ void Builder::build_import_table() {
 
   const auto it_import_section = std::find_if(std::begin(binary_->sections_), std::end(binary_->sections_),
       [] (const std::unique_ptr<Section>& section) {
-        return section != nullptr && section->is_type(PE_SECTION_TYPES::IMPORT);
+        return section != nullptr && section->is_type(PE_SECTION_TYPES::IMPORT_TAB);
       });
 
   // Remove 'import' type from the original section
   if (it_import_section != std::end(binary_->sections_)) {
-    (*it_import_section)->remove_type(PE_SECTION_TYPES::IMPORT);
+    (*it_import_section)->remove_type(PE_SECTION_TYPES::IMPORT_TAB);
   }
 
   // As add_section will change DataDirectory::TYPES::IMPORT_TABLE we have to save it before
   uint32_t offset_imports  = binary_->rva_to_offset(binary_->data_directory(DataDirectory::TYPES::IMPORT_TABLE)->RVA());
-  Section* import_section = binary_->add_section(new_import_section, PE_SECTION_TYPES::IMPORT);
+  Section* import_section = binary_->add_section(new_import_section, PE_SECTION_TYPES::IMPORT_TAB);
   if (import_section == nullptr) {
     return;
   }

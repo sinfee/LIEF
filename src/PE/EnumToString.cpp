@@ -36,13 +36,13 @@ const char* to_string(PE_SECTION_TYPES e) {
   CONST_MAP(PE_SECTION_TYPES, const char*, 10) enumStrings {
     { PE_SECTION_TYPES::TEXT,       "TEXT"       },
     { PE_SECTION_TYPES::TLS,        "TLS_"       },
-    { PE_SECTION_TYPES::IMPORT,     "IDATA"      },
+    { PE_SECTION_TYPES::IMPORT_TAB,     "IDATA"      },
     { PE_SECTION_TYPES::DATA,       "DATA"       },
     { PE_SECTION_TYPES::BSS,        "BSS"        },
     { PE_SECTION_TYPES::RESOURCE,   "RESOURCE"   },
     { PE_SECTION_TYPES::RELOCATION, "RELOCATION" },
-    { PE_SECTION_TYPES::EXPORT,     "EXPORT"     },
-    { PE_SECTION_TYPES::DEBUG,      "DEBUG"      },
+    { PE_SECTION_TYPES::EXPORT_TAB,     "EXPORT"     },
+    { PE_SECTION_TYPES::DEBUG_INFO,      "DEBUG"      },
     { PE_SECTION_TYPES::UNKNOWN,    "UNKNOWN"    },
   };
   const auto it = enumStrings.find(e);

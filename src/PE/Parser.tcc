@@ -152,7 +152,7 @@ ok_error_t Parser::parse_data_directories() {
     {
       LIEF_DEBUG("Processing Import Table");
       if (Section* section = import_data_dir->section()) {
-        section->add_type(PE_SECTION_TYPES::IMPORT);
+        section->add_type(PE_SECTION_TYPES::IMPORT_TAB);
       }
       parse_import_table<PE_T>();
     }
@@ -205,7 +205,7 @@ ok_error_t Parser::parse_data_directories() {
   if (DataDirectory* dir = binary_->data_directory(DataDirectory::TYPES::DEBUG)) {
     if (dir->RVA() > 0) {
       if (Section* sec = dir->section()) {
-        sec->add_type(PE_SECTION_TYPES::DEBUG);
+        sec->add_type(PE_SECTION_TYPES::DEBUG_INFO);
       }
       parse_debug();
     }

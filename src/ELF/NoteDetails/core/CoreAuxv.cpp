@@ -152,7 +152,7 @@ const char* to_string(CoreAuxv::TYPE type) {
   #define ENTRY(X) std::pair(CoreAuxv::TYPE::X, #X)
   STRING_MAP enums2str {
     ENTRY(END),
-    ENTRY(IGNORE),
+    ENTRY(IGNORE_TYPE),
     ENTRY(EXECFD),
     ENTRY(PHDR),
     ENTRY(PHENT),

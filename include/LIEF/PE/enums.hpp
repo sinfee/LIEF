@@ -1087,13 +1087,13 @@ enum class ACCELERATOR_VK_CODES: size_t  {
 enum class PE_SECTION_TYPES : uint8_t {
   TEXT       = 0,
   TLS        = 1,
-  IMPORT     = 2,
+  IMPORT_TAB     = 2,
   DATA       = 3,
   BSS        = 4,
   RESOURCE   = 5,
   RELOCATION = 6,
-  EXPORT     = 7,
-  DEBUG      = 8,
+  EXPORT_TAB     = 7,
+  DEBUG_INFO      = 8,
   LOAD_CONFIG = 9,
   UNKNOWN     = 10
 };

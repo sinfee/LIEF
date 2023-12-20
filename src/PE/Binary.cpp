@@ -514,7 +514,7 @@ Section* Binary::add_section(const Section& section, PE_SECTION_TYPES type) {
   }
 
 
-  if (type == PE_SECTION_TYPES::IMPORT) {
+  if (type == PE_SECTION_TYPES::IMPORT_TAB) {
     new_section->add_characteristic(Section::CHARACTERISTICS::MEM_READ);
     new_section->add_characteristic(Section::CHARACTERISTICS::MEM_EXECUTE);
     new_section->add_characteristic(Section::CHARACTERISTICS::MEM_WRITE);
