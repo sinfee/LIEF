@@ -228,7 +228,7 @@ RESOURCE_SUBLANGS ResourcesManager::sub_lang(RESOURCE_LANGS lang, size_t index) 
 
   const auto it = sublangs_map.find({lang, index});
   if (it == std::end(sublangs_map)) {
-    return RESOURCE_SUBLANGS::SUBLANG_DEFAULT;
+    return RESOURCE_SUBLANGS::_SUBLANG_DEFAULT_;
   }
   return it->second;
 }

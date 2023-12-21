@@ -112,8 +112,8 @@ class LIEF_API ResourceIcon : public Object {
   uint16_t             planes_ = 0;
   uint16_t             bit_count_ = 0;
   uint32_t             id_ = UINT_MAX;
-  RESOURCE_LANGS       lang_ = RESOURCE_LANGS::LANG_NEUTRAL;
-  RESOURCE_SUBLANGS    sublang_ = RESOURCE_SUBLANGS::SUBLANG_DEFAULT;
+  RESOURCE_LANGS       lang_ = RESOURCE_LANGS::_LANG_NEUTRAL_;
+  RESOURCE_SUBLANGS    sublang_ = RESOURCE_SUBLANGS::_SUBLANG_DEFAULT_;
   std::vector<uint8_t> pixels_;
 };
 

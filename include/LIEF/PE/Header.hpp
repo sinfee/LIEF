@@ -51,7 +51,7 @@ class LIEF_API Header : public Object {
     MIPS16    = 0x266,  /**< MIPS16                         */
     MIPSFPU   = 0x366,  /**< MIPS with FPU                  */
     MIPSFPU16 = 0x466,  /**< MIPS16 with FPU                */
-    POWERPC   = 0x1F0,  /**< Power PC little endian         */
+    _POWERPC_ = 0x1F0,  /**< Power PC little endian         */
     POWERPCFP = 0x1F1,  /**< Power PC with floating point   */
     R4000     = 0x166,  /**< MIPS with little endian        */
     RISCV32   = 0x5032, /**< RISC-V 32-bit address space    */

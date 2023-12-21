@@ -32,7 +32,7 @@ class LIEF_API NoteAbi : public Note {
   public:
   /// ABI recognized by this note
   enum class ABI {
-    LINUX = 0,
+    LINUX_OS = 0,
     GNU,
     SOLARIS2,
     FREEBSD,

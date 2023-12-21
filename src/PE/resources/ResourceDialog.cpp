@@ -48,8 +48,8 @@ ResourceDialog::ResourceDialog() :
   weight_{0},
   italic_{false},
   charset_{0},
-  lang_{RESOURCE_LANGS::LANG_NEUTRAL},
-  sublang_{RESOURCE_SUBLANGS::SUBLANG_DEFAULT}
+  lang_{RESOURCE_LANGS::_LANG_NEUTRAL_ },
+  sublang_{RESOURCE_SUBLANGS::_SUBLANG_DEFAULT_ }
 {}
 
 
@@ -67,8 +67,8 @@ ResourceDialog::ResourceDialog(const details::pe_dialog_template_ext& header) :
   weight_{0},
   italic_{false},
   charset_{0},
-  lang_{RESOURCE_LANGS::LANG_NEUTRAL},
-  sublang_{RESOURCE_SUBLANGS::SUBLANG_DEFAULT}
+  lang_{RESOURCE_LANGS::_LANG_NEUTRAL_ },
+  sublang_{RESOURCE_SUBLANGS::_SUBLANG_DEFAULT_ }
 {}
 
 
@@ -86,8 +86,8 @@ ResourceDialog::ResourceDialog(const details::pe_dialog_template& header) :
   weight_{0},
   italic_{false},
   charset_{0},
-  lang_{RESOURCE_LANGS::LANG_NEUTRAL},
-  sublang_{RESOURCE_SUBLANGS::SUBLANG_DEFAULT}
+  lang_{RESOURCE_LANGS::_LANG_NEUTRAL_ },
+  sublang_{RESOURCE_SUBLANGS::_SUBLANG_DEFAULT_ }
 {}
 
 

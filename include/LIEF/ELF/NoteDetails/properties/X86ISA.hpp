@@ -47,7 +47,7 @@ class X86ISA : public NoteGnuProperty::Property {
 
     CMOV,
     FMA,
-    I486,
+    I486_ISA,
     I586,
     I686,
     SSE,
