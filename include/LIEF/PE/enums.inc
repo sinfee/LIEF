@@ -272,7 +272,7 @@ enum _LIEF_EN(RESOURCE_TYPES) {
 };
 
 enum _LIEF_EN(RESOURCE_LANGS) {
-  _LIEF_EI(LANG_NEUTRAL)        = 0x00,
+  _LIEF_EI(_LANG_NEUTRAL_)        = 0x00,
   _LIEF_EI(LANG_INVARIANT)      = 0x7f,
   _LIEF_EI(LANG_AFRIKAANS)      = 0x36,
   _LIEF_EI(LANG_ALBANIAN)       = 0x1c,
