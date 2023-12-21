@@ -79,7 +79,7 @@ void NoteAbi::dump(std::ostream& os) const {
 const char* to_string(NoteAbi::ABI abi) {
   #define ENTRY(X) std::pair(NoteAbi::ABI::X, #X)
   STRING_MAP enums2str {
-    ENTRY(LINUX),
+    ENTRY(LINUX_OS),
     ENTRY(GNU),
     ENTRY(SOLARIS2),
     ENTRY(FREEBSD),

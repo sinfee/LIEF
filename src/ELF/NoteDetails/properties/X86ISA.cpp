@@ -91,7 +91,7 @@ std::unique_ptr<X86ISA> X86ISA::create_compat_isa_1(
       }
     } else {
       switch (bit) {
-        case GNU_PROPERTY_X86_COMPAT_ISA_1_486:      values.emplace_back(flag, ISA::I486); break;
+        case GNU_PROPERTY_X86_COMPAT_ISA_1_486:      values.emplace_back(flag, ISA::I486_ISA); break;
         case GNU_PROPERTY_X86_COMPAT_ISA_1_586:      values.emplace_back(flag, ISA::I586); break;
         case GNU_PROPERTY_X86_COMPAT_ISA_1_686:      values.emplace_back(flag, ISA::I686); break;
         case GNU_PROPERTY_X86_COMPAT_ISA_1_SSE:      values.emplace_back(flag, ISA::SSE); break;
@@ -164,7 +164,7 @@ const char* to_string(X86ISA::ISA isa) {
 
     ENTRY(CMOV),
     ENTRY(FMA),
-    ENTRY(I486),
+    ENTRY(I486_ISA),
     ENTRY(I586),
     ENTRY(I686),
     ENTRY(SSE),

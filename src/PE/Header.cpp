@@ -133,7 +133,7 @@ const char* to_string(Header::MACHINE_TYPES e) {
     { Header::MACHINE_TYPES::MIPS16,    "MIPS16" },
     { Header::MACHINE_TYPES::MIPSFPU,   "MIPSFPU" },
     { Header::MACHINE_TYPES::MIPSFPU16, "MIPSFPU16" },
-    { Header::MACHINE_TYPES::POWERPC,   "POWERPC" },
+    { Header::MACHINE_TYPES::_POWERPC_,   "POWERPC" },
     { Header::MACHINE_TYPES::POWERPCFP, "POWERPCFP" },
     { Header::MACHINE_TYPES::R4000,     "R4000" },
     { Header::MACHINE_TYPES::RISCV32,   "RISCV32" },
